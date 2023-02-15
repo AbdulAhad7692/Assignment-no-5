@@ -55,8 +55,24 @@
 
 //__QUESTION NO 6__//
 
-var colors = ["red ", "yellow ", "green "]
-document.write(colors)
-document.write("<br>")
-var color = prompt("Enter color")
-document.write(color + " ," + colors)
+// var colors = ["red ", "yellow ", "green "]
+// document.write(colors)
+// colors.unshift("<br>" + prompt("Enter color", "pink "))
+// document.write(colors)
+// colors.push(prompt("Enter color", "Purple "))
+// document.write(colors + "<br />")
+// colors.unshift(prompt("Enter color", "Sky "))
+// colors.unshift(prompt("Enter color", "Blue "))
+// document.write(colors)
+// colors.shift()
+// document.write("<br>" + colors)
+// colors.pop()
+// document.write("<br>" + colors)
+// var color1 = prompt("Enter color", "Black");
+// var index = prompt("Enter Index", "2")
+// colors.splice(index, 0, color1)
+// document.write("<br>" + colors)
+// var RemoveIndex = prompt("Enter Number", "1")
+// var RemoveIndex2 = prompt("Enter Number", "2")
+// colors.splice(RemoveIndex + RemoveIndex2)
+// document.write("<br>" + colors)
