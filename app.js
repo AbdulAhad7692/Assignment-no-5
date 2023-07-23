@@ -1,221 +1,288 @@
-//___QUESTION NO 1___//
+// // _________CHAPTER 9-10_________//
 
-// var student = []
 
-//___QUESTION NO 2__//
+// // ____QUESTION NO 1____//
 
-// var object = []
-
-//__QUESTION NO 3__//
-
-// var array = ["Hello"]
-// var array = ["1234"]
-// var array = [true]
-// var array = ["hello" , 1234 ,true,]
-
-//__QUESTION NO 7__//
-
-// var Qualification = ["SSC", "HSC", "BCS", "BS", "BCOM", "Ms", "M. Phil.", "PhD"]
-
-// document.write("<h3>Qualifications : </h3>")
-// document.write(Qualification[0])
-// document.write("<br>")
-// document.write(Qualification[1])
-// document.write("<br>")
-// document.write(Qualification[2])
-// document.write("<br>")
-// document.write(Qualification[3])
-// document.write("<br>")
-// document.write(Qualification[4])
-// document.write("<br>")
-// document.write(Qualification[5])
-// document.write("<br>")
-// document.write(Qualification[6])
-// document.write("<br>")
-// document.write(Qualification[7])
-// document.write("<br>")
-
-//__QUESTION NO 8__//
-
-// var students = ["Ahad", "Faiq", "Shahzaib"]
-// var marks = [480, 470, 465]
-
-// document.write(
-//     "score  of  " + students[0] + " is " + marks[0] + " whose percentage is " + marks[0] * 100 / 500
+// var greet = prompt("Your City")
+// if (greet === "karachi") {
+//     alert("Welcome to the City of Lights")
+// }
+// else (
+//     alert("Welcome User")
 // )
+// //____QUESTION NO 2____//
+
+// var gender = prompt("Your gender")
+// if (gender === "male") {
+//     alert("Good Morning, Sir")
+// }
+// else {
+//     alert("Good Morning, Mam")
+// }
+
+// //____QUESTION NO 3____///
+
+// var signal = prompt("Color of Traffic Signal")
+// if (signal == "red") {
+//     alert("Must Stop")
+// }
+// else if (signal == "yellow") {
+//     alert("Ready to Move")
+// }
+// else if (signal == "green") {
+//     alert("Move Now")
+// }
+// else {
+//     alert("bhai agar traffic light kharab hai to ruka q hai")
+// }
+
+// //____QUESTION NO 4____//
+
+// var fuel = prompt("Remaining fuel left  ")
+// if (fuel <= 0.25) {
+//     alert("Please Refill Your Fuel")
+// }
+// else {
+//     alert("bhot Petrol hai Ameerzade apke pass")
+// }
+
+// // ____QUESTION NO 5____//
+
+// var a = 4;
+// if (++a === 5) {
+//     alert("given condition for variable a is true");
+// }
+
+// var b = 82;
+// if (++b === 83) {
+//     alert("given condition for variable b is true");
+// }
+// var c = 12;
+// if (++c === 13) {
+//     alert("condition 1 is true");
+// }
+// if (c === 13) {
+//     alert("condition 2 is true");
+// }
+// if (++c < 14) {
+//     alert("condition 3 is true");
+// }
+// if (c === 14) {
+//     alert("condition 4 is true");
+// }
+// var materialCost = 20000;
+// var laborCost = 2000;
+// var totalCost = materialCost + laborCost;
+// if (totalCost === laborCost + materialCost) {
+//     alert("The cost equals");
+// }
+// if (true) {
+//     alert("True");
+// }
+// if (false) {
+//     alert("False");
+// }
+// if ("car" > "cat") {
+//     alert("car is smaller than cat");
+// }
+
+// // ____QUESTION NO 6____//
+
+// document.write("<h1>Mark Sheet</h1>")
+// var marks;
+// var total;
+// var percent;
+// total = prompt("Enter Total Marks")
+// marks = prompt("Enter Obtained Marks")
+// document.write("Total Marks : " + total)
 // document.write("<br>")
-// document.write(
-//     "score  of  " + students[1] + " is " + marks[1] + " whose percentage is " + marks[1] * 100 / 500
-// )
+// document.write("Marks Obtained : " + marks)
 // document.write("<br>")
-// document.write(
-//     "score  of  " + students[2] + " is " + marks[2] + " whose percentage is " + marks[2] * 100 / 500
-// )
+// percent = (marks * 100) / total;
+// document.write("Percentage : " + percent + "%")
 // document.write("<br>")
-
-//__QUESTION NO 9__//
-
-// var colors = ["red ", "yellow ", "green "]
-// document.write(colors)
-// colors.unshift("<br>" + prompt("Enter color", "pink "))
-// document.write(colors)
-// colors.push(prompt("Enter color", "Purple "))
-// document.write(colors + "<br />")
-// colors.unshift(prompt("Enter color", "Sky "))
-// colors.unshift(prompt("Enter color", "Blue "))
-// document.write(colors)
-// colors.shift()
-// document.write("<br>" + colors)
-// colors.pop()
-// document.write("<br>" + colors)
-// var color1 = prompt("Enter color", "Black");
-// var index = prompt("Enter Index", "2")
-// colors.splice(index, 0, color1)
-// document.write("<br>" + colors)
-// var RemoveIndex = prompt("Enter Number", "1")
-// var RemoveIndex2 = prompt("Enter Number", "2")
-// colors.splice(RemoveIndex + RemoveIndex2)
-// document.write("<br>" + colors)
-
-//__QUESTION NO 10__//
-
-// var score = [320, 230, 480, 120]
-// document.write("Score of Student : " + score + "<br>")
-// score.sort()
-// document.write( "Oredered Score of Students : " + score)
-
-//__QUESTION NO 11__//
-
-// var city = ["karachi ", "Lahore ", "Islamabad", "Quetta", "Peshawar "]
-// document.write("<h4>Cities List : </h4>")
-// document.write(city)
-// var selectedcities;
-// document.write("<h4>Selected Cites : </h4>")
-// document.write(city[2] + "," + city[3] )
-
-//__QUESTION NO 12__//
-
-// var cat = ["this", "is", "my", "cat"]
-// document.write(cat + "<br>")
-// document.write(cat.join(" "))
-
-//__QUESTION NO 13__//
-
-// var order = ["Keyboard","Mouse","Printer","Monitor"]
-
-// document.write("Devices: <br>" + order + "<br>")
-
-// document.write("Out: <br> " + order[0] + "<br>")
-// document.write("Out: <br> " + order[1] + "<br>")
-// document.write("Out: <br> " + order[2] + "<br>")
-// document.write("Out: <br> " + order[3] + "<br>")
-
-//__QUESTION NO 14__//
-
-// var order1 = ["Keyboard","Mouse","Printer","Monitor"]
-
-// document.write("Devices: <br>" + order1+ "<br>")
-
-// document.write("Out: <br> " + order1[3] + "<br>")
-// document.write("Out: <br> " + order1[2] + "<br>")
-// document.write("Out: <br> " + order1[1] + "<br>")
-// document.write("Out: <br> " + order1[0] + "<br>")
-
-//__QUESTION NO 15__//
-
-// var mobile = ["Apple", "Samsung", "Motorola", "Huawei", "Nokia", "Sony", "Haier"]
-// document.write(
-// "<select class=mobile>" +
-//     " <option>apple<option>" +
-//     " <option>Samsung<option>" +
-//     " <option>Motorola<option>" +
-//     " <option>Huawei<option>" +
-//     " <option>Nokia<option>" +
-//     " <option>Sony<option>" +
-//     " <option>Haier<option>" +
-// "</select>"    
-// )
-
-//___CHAPTER 17--20___//
-
-
-//___QUESTION NO 1___//
-
-// var mutlidimensional = [[1, 2], [3, 4], [5, 6]]
-
-//__QUESTION NO 2__//
-
-// var multi= [[0,1,2,3],[1,0,1,2],[2,1,0,1]]
-// document.write("<h1>" + multi[0] + "</h1>")
-// document.write("<h1>" + multi[1] + "</h1>")
-// document.write("<h1>" + multi[2] + "</h1>")
-
-//__QUESTION NO 3__//
-
-// for (var i = 1; i <= 10; i++) {
-//     document.write(i);
+// if (percent >= 80) {
+//     document.write("Grade : A-One")
+//     document.write("<br>")
+//     document.write("Remarks : Excellent")
+// }
+// else if (percent >= 70) {
+//     document.write("Grade : A")
+//     document.write("<br>")
+//     document.write("Remarks : Good")
+// }
+// else if (percent >= 60) {
+//     document.write("Grade : B")
+//     document.write("<br>")
+//     document.write("Remarks : You Need To Improve")
+// }
+// else {
+//     document.write("Grade : Fail")
+//     document.write("<br>")
+//     document.write("Remarks : Sorry")
 // }
 
-//__QUESTION NO 4__//
+// // ___QUESTION NO 7___//
 
-// var number = prompt("Enter a Number : ")
-// var length = prompt("Enter length of multiplication table : ")
-// var result;
-// document.write("Multiplication table of " + number + " length " + length + "</br>")
-// for (i = 1; i <= length; i++) {
-//     result = number * i
-//     document.write(number + " x " + i + " = " + result + "</br>")
+// var guess;
+// guess = prompt("Enter a Number \nRanging from 1 to 10")
+// if (guess == 8) {
+//     alert("Bingo! You Guessed the Right Number")
+// }
+// else if (guess == 7) {
+//     alert("Close Enough to the Correct Answer")
+// }
+// else {
+//     alert("Not Even close")
 // }
 
-//__QUESTION NO 5__//
-
-// var fruits = ["apple", "mango", "banana", "strawberry", "orange"]
-// for (var i = 0; i < fruits.length; i++) {
-//     document.write(fruits[i] + "</br>")
+// // ___QUESTION NO 8___//
+// var three;
+// three = prompt("Enter Any Number", "3")
+// if (three % 3 == 0) {
+//     alert("Number is Divisible by 3")
 // }
-// for (var j = 0; j < 1; j++) {
-//     for (var k = 0; k < fruits.length; k++){
-//         document.write("Element at index " + k + " is " + fruits[k] + "</br>")
-//     }
-
+// else {
+//     alert("Number is not divisible by 3")
 // }
 
-//__QUESTION NO 6__//
+// // ___QUESTION NO 9___//
+// var even;
 
-// var LengthOfCounting = prompt("Type Last Number");
-// var StartOfCounting = prompt("Type First NUmber")
-// document.write("Counting : ")
-
-// for (var i = StartOfCounting; i <= LengthOfCounting; i++) {
-//     document.write(i + ",")
+// even = prompt("Enter Any Number")
+// if (even % 2 == 0) {
+//     alert("Given Number is Even")
 // }
-// document.write("</br>" + "Reverse Counting : ")
-// for (var j = LengthOfCounting; j >= StartOfCounting; j--) {
-//     document.write(j + ",");
-// }
-// document.write("</br>" + "Even Counting : ")
-// var End = prompt("Enter Ending Even Number")
-// for (var k = 0; k <= End; k += 2) {
-//     document.write(k + ",")
-// }
-// document.write("</br>" + "Odd Counting : ")
-// var End = prompt("Enter Ending Odd Number")
-// for (var l = 1; l <= End; l += 2) {
-//     document.write(l + ",")
-// }
-// document.write("</br>" + "Series Counting : ")
-// End=20;
-// for (var m = 0; m <= End; m += 2) {
-//     document.write(m + "k ,")
+// else {
+//     alert("Given Number is Odd")
 // }
 
-//__QUESTION NO 7__//
+// // ___QUESTION NO 10___//
+// var temp;
+// temp = prompt("Enter Today's Temperature")
+// if (temp > 40) {
+//     alert("It's too hot outside")
+// }
+// else if (temp > 30) {
+//     alert("The Weather Today is Normal")
+// }
+// else if (temp > 20) {
+//     alert("Today's Weather is Cool")
+// }
+// else if (temp > 10) {
+//     alert("OMG! Today's Weather is so cool")
+// }
+// else if (temp > 0) {
+//     alert("freezing outside")
+// }
+// else {
+//     alert("Value Enter krni hoti hai")
+// }
 
-var A = ["cake", "apple pie", "cookie", "chips", "patties"]
-var need = prompt("Welcome to ABC backery What do you want to order Sir/MAm")
-for (var i = 0 ;i <= A.length;i++){
-    if (A[i] === need) {
-        document.write(need + ' is found at index ' + i);
-        break;
-      }
-}
+// //___QUESTION NO 11___//
+// document.write("<h1>CALCULATOR</h1>")
+
+// var num1 = prompt("Enter Number 1")
+// var num2 = prompt("Enter Number 2")
+// var add = -(-num1 - num2);
+// var subtract = num1 - num2;
+// var product = num1 * num2;
+// var divide = num1 / num2;
+// var mod = num1 % num2;
+// document.write("<br>")
+// document.write("Addition of " + num1 + " and " + num2 + " is : " + add)
+// document.write("<br>")
+// document.write("Subtraction of " + num1 + " and " + num2 + " is : " + subtract)
+// document.write("<br>")
+// document.write("Product of " + num1 + " and " + num2 + " is : " + product)
+// document.write("<br>")
+// document.write("Division of  " + num1 + " and " + num2 + " is : " + divide)
+// document.write("<br>")
+// document.write("Mod of  " + num1 + " and " + num2 + " is : " + mod)
+
+
+// // _______CHAPTER 12-13_______//
+
+// var char = prompt("Enter a Keyword")
+// if (char >= 65 && char <= 90) {
+//     alert("UPPERCASE")
+// }
+// else if (char >= 97 && char <= 122) {
+//     alert("LOWER CASE")
+// }
+// else {
+//     alert("print krde")
+// }
+
+// // ___QUESTION NO 2___//
+// var value1;
+// var value2;
+
+// value1 = prompt("Enter number 1")
+// value2 = prompt("Enter number 2")
+
+// if (value1 > value2) {
+//     alert(value1 + " is bigger then " + value2)
+// }
+
+// else if (value2 > value1) {
+//     alert(value1 + " is less then " + value2)
+// }
+// else if (value1 == value2) {
+//     alert(value1 + " both values are equal " + value2)
+// }
+// else {
+//     alert("VALUE ENTER KRDE BHAI")
+// }
+
+// // ___QUESTION NO 3____//
+
+// var data1;
+// data1 = prompt("ENTER A NUMBER")
+
+// if (data1 > 0) {
+//     alert("NUMBER IS POSITIVE")
+// }
+// else if (data1 < 0) {
+//     alert("NUMBER IS NEGATIVE")
+// }
+// else {
+//     alert("NUMBER IS ZERO")
+// }
+
+// // ___QUESTION NO 4___//
+// var vowel;
+// vowel = prompt("ENTER A ALPHABET \n A PROGRAM TO CHECK ALPHABET IS VOWEL OR NOT")
+// if (vowel == "a" || vowel == "e" || vowel == "i" || vowel == "o" || vowel == "u") {
+//     alert("alphabet is vowel")
+// }
+// else {
+//     alert("Alphabet is not a vowel")
+// }
+
+// // ___QUESTION NO 5___//
+
+// var password = prompt("Enter your password")
+// var password1 = prompt("Re-Enter your password")
+
+// if (password == password1) {
+//     alert("Correct! The password you Entered matches the original password")
+// }
+// else {
+//     alert("Password is Incorrect")
+// }
+
+// // ___QUESTION NO 6___//
+// var greeting;
+// var hour;
+// hour = prompt("Enter time in 24hr format")
+// if (hour < 18) {
+//     alert("Good day")
+// }
+// else {
+//     alert("Good evening")
+// }
+
+var name = "raza"
+var name = "ahad"
+console.log(name(r))
